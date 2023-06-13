@@ -14,12 +14,12 @@ def send_message(to: str, message: str) -> None:
   '''
     Send message to a Telegram user.
     Parameters:
-        - to(str): sender whatsapp number in this whatsapp:+917895230590 form
+        - to(str): sender whatsapp number in this whatsapp:+91xxxxxxxxxx form
         - message(str): text message to send
     Returns:
         - None
     '''
 
-  _ = client.messages.create(from_='whatsapp:+14155238886',
+  _ = client.messages.create(from_='whatsapp:('SEND_FROM_NUMBER')',
                              body=message,
                              to=to)
